@@ -1,0 +1,69 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="container-forca">
+
+    <div id="inicio">
+      <h1>🎮 Jogo da Forca</h1>
+
+      <button class="btn-iniciar" onclick="iniciarJogo()">
+        ▶ Iniciar
+      </button>
+
+      <h3>Escolha a dificuldade:</h3>
+
+      <div id="config">
+        <button class="btn-facil" onclick="definirDificuldade('facil')">
+          📊 Fácil
+        </button>
+
+        <button class="btn-medio" onclick="definirDificuldade('medio')">
+          📊 Médio
+        </button>
+
+        <button class="btn-dificil" onclick="definirDificuldade('dificil')">
+          📊 Difícil
+        </button>
+      </div>
+
+      <button class="btn-ranking" onclick="mostrarRanking()">
+        🏆 Ranking
+      </button>
+    </div>
+
+    <div id="jogo" style="display: none;">
+
+      <button class="btn-voltar" onclick="voltarInicio()">
+        ⬅ Voltar ao Início
+      </button>
+
+      <div id="categoriaVisual"></div>
+
+      <h3 id="dica"></h3>
+
+      <pre id="boneco"></pre>
+
+      <p id="palavra"></p>
+
+      <div id="teclado"></div>
+
+      <div id="resultado"></div>
+
+      <button id="btnProximo" onclick="proximoJogo()" style="display:none;">
+        ➡ Próximo jogo
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
