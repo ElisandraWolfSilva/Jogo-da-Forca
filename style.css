@@ -1,0 +1,185 @@
+/* ===== RESET ===== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body{
+  font-family: Arial, sans-serif;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+#container-forca{
+  width: 530px;
+  max-width: 95vw;
+  background: #0d0d0c;
+  border: 1px solid #1f1135;
+  border-radius: 16px;
+  padding: 45px 35px;
+  text-align: center;
+}
+
+/* ===== TELAS (INICIO E JOGO) ===== */
+#inicio, #jogo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+/* ===== CONFIG BOTÕES ===== */
+#config{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+/* ===== TÍTULO ===== */
+#container-forca h1{
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* ===== SUBTÍTULO ===== */
+#container-forca h3{
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px 0 5px 0;
+}
+
+/* ===== ESTILO GERAL DOS BOTÕES ===== */
+#container-forca button{
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: opacity 0.2s;
+}
+
+#container-forca button:hover{
+  opacity: 0.85;
+}
+
+/* ===== PALETA DE CORES ORIGINAL ===== */
+.btn-iniciar {
+  background: #6a40d7 !important;
+  margin-bottom: 5px;
+}
+
+.btn-facil {
+  background: #2b9e4d !important;
+}
+
+.btn-medio {
+  background: #fca104 !important;
+}
+
+.btn-dificil {
+  background: #dc3c3c !important;
+}
+
+.btn-ranking {
+  background: #2b2d31 !important;
+  margin-top: 5px;
+}
+
+/* ===== ESTILIZAÇÃO DO BONECO (ASCII ART) ===== */
+#boneco {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #6a40d7;
+  background: #141414;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: inline-block;
+  text-align: left;
+}
+
+/* ===== PALAVRA ===== */
+#palavra{
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+/* ===== TECLADO ===== */
+#teclado{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+/* ===== BOTÕES DO TECLADO ===== */
+#teclado button{
+  width: 50px !important;
+  height: 50px;
+  padding: 0 !important;
+  border: none;
+  border-radius: 8px;
+  background: #6a40d7 !important;
+  color: white !important;
+  font-size: 18px !important;
+  cursor: pointer;
+}
+
+/* ===== BOTÃO VOLTAR ===== */
+.btn-voltar{
+  padding: 12px 20px !important;
+  border-radius: 10px !important;
+  background: #374151 !important;
+  font-size: 16px !important;
+  margin-bottom: 10px;
+}
+
+/* ===== BOTÃO PRÓXIMO JOGO ===== */
+#btnProximo {
+  background: #2b9e4d !important;
+  color: white !important;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 15px;
+}
+
+#btnProximo:hover {
+  opacity: 0.85;
+}
+
+#resultado{
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
